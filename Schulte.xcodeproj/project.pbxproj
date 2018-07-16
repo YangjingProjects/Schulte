@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39118A3820FC3E980025838B /* SchulteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A3720FC3E980025838B /* SchulteTests.m */; };
+		39118A4320FC3E980025838B /* SchulteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A4220FC3E980025838B /* SchulteUITests.m */; };
+		39118A6D20FC43A80025838B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A5320FC43A80025838B /* main.m */; };
+		39118A6E20FC43A80025838B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A5420FC43A80025838B /* AppDelegate.m */; };
+		39118A6F20FC43A80025838B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39118A5F20FC43A80025838B /* Assets.xcassets */; };
+		39118A7020FC43A80025838B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39118A6020FC43A80025838B /* LaunchScreen.storyboard */; };
+		39118A7120FC43A80025838B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39118A6220FC43A80025838B /* Main.storyboard */; };
+		39118A7220FC43A80025838B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39118A6420FC43A80025838B /* Info.plist */; };
+		39118A7320FC43A80025838B /* Schulte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39118A6820FC43A80025838B /* Schulte.xcdatamodeld */; };
+		39118A7620FC44CE0025838B /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A7520FC44CE0025838B /* MainController.m */; };
+		39118A7B20FC6DD50025838B /* LevelListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A7A20FC6DD50025838B /* LevelListController.m */; };
+		39118A7E20FC6E180025838B /* LevelListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A7D20FC6E180025838B /* LevelListCell.m */; };
+		39118A8120FC6E330025838B /* LevelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8020FC6E330025838B /* LevelModel.m */; };
+		39118A8520FC86D10025838B /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8420FC86D10025838B /* UIImage+Color.m */; };
+		39118A8820FC8AD80025838B /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8720FC8AD80025838B /* TestController.m */; };
+		39118A8B20FC8BE50025838B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8A20FC8BE50025838B /* TestCell.m */; };
+		39118A8E20FC8BF80025838B /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8D20FC8BF80025838B /* TestModel.m */; };
+		CC7CB7D8A2A15F18E81D5C2E /* libPods-Schulte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39118A3420FC3E980025838B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39118A1020FC3E960025838B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39118A1720FC3E960025838B;
+			remoteInfo = Schulte;
+		};
+		39118A3F20FC3E980025838B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39118A1020FC3E960025838B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39118A1720FC3E960025838B;
+			remoteInfo = Schulte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1514CD052DE10ED25B872BE8 /* Pods-Schulte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schulte.release.xcconfig"; path = "Pods/Target Support Files/Pods-Schulte/Pods-Schulte.release.xcconfig"; sourceTree = "<group>"; };
+		39118A1820FC3E960025838B /* Schulte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schulte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39118A3320FC3E980025838B /* SchulteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchulteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39118A3720FC3E980025838B /* SchulteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchulteTests.m; sourceTree = "<group>"; };
+		39118A3920FC3E980025838B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39118A3E20FC3E980025838B /* SchulteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchulteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39118A4220FC3E980025838B /* SchulteUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchulteUITests.m; sourceTree = "<group>"; };
+		39118A4420FC3E980025838B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39118A5220FC43A80025838B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39118A5320FC43A80025838B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39118A5420FC43A80025838B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39118A5F20FC43A80025838B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39118A6120FC43A80025838B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39118A6320FC43A80025838B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39118A6420FC43A80025838B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39118A6920FC43A80025838B /* Schulte.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Schulte.xcdatamodel; sourceTree = "<group>"; };
+		39118A7420FC44CE0025838B /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		39118A7520FC44CE0025838B /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		39118A7720FC45360025838B /* SchultePCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchultePCH.pch; sourceTree = "<group>"; };
+		39118A7820FC46920025838B /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		39118A7920FC6DD50025838B /* LevelListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelListController.h; sourceTree = "<group>"; };
+		39118A7A20FC6DD50025838B /* LevelListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelListController.m; sourceTree = "<group>"; };
+		39118A7C20FC6E180025838B /* LevelListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelListCell.h; sourceTree = "<group>"; };
+		39118A7D20FC6E180025838B /* LevelListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelListCell.m; sourceTree = "<group>"; };
+		39118A7F20FC6E330025838B /* LevelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelModel.h; sourceTree = "<group>"; };
+		39118A8020FC6E330025838B /* LevelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelModel.m; sourceTree = "<group>"; };
+		39118A8320FC86D10025838B /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		39118A8420FC86D10025838B /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		39118A8620FC8AD80025838B /* TestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
+		39118A8720FC8AD80025838B /* TestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestController.m; sourceTree = "<group>"; };
+		39118A8920FC8BE50025838B /* TestCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCell.h; sourceTree = "<group>"; };
+		39118A8A20FC8BE50025838B /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
+		39118A8C20FC8BF80025838B /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		39118A8D20FC8BF80025838B /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		68EA28DF177B179E7C4A3175 /* Pods-Schulte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schulte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Schulte/Pods-Schulte.debug.xcconfig"; sourceTree = "<group>"; };
+		8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Schulte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39118A1520FC3E960025838B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC7CB7D8A2A15F18E81D5C2E /* libPods-Schulte.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39118A3020FC3E980025838B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39118A3B20FC3E980025838B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39118A0F20FC3E960025838B = {
+			isa = PBXGroup;
+			children = (
+				39118A5020FC43A80025838B /* Schulte */,
+				39118A3620FC3E980025838B /* SchulteTests */,
+				39118A4120FC3E980025838B /* SchulteUITests */,
+				39118A1920FC3E960025838B /* Products */,
+				E38B98BC99647832CC831548 /* Pods */,
+				97BE61DBDC67043575692336 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39118A1920FC3E960025838B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39118A1820FC3E960025838B /* Schulte.app */,
+				39118A3320FC3E980025838B /* SchulteTests.xctest */,
+				39118A3E20FC3E980025838B /* SchulteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39118A3620FC3E980025838B /* SchulteTests */ = {
+			isa = PBXGroup;
+			children = (
+				39118A3720FC3E980025838B /* SchulteTests.m */,
+				39118A3920FC3E980025838B /* Info.plist */,
+			);
+			path = SchulteTests;
+			sourceTree = "<group>";
+		};
+		39118A4120FC3E980025838B /* SchulteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				39118A4220FC3E980025838B /* SchulteUITests.m */,
+				39118A4420FC3E980025838B /* Info.plist */,
+			);
+			path = SchulteUITests;
+			sourceTree = "<group>";
+		};
+		39118A5020FC43A80025838B /* Schulte */ = {
+			isa = PBXGroup;
+			children = (
+				39118A5120FC43A80025838B /* App */,
+				39118A5520FC43A80025838B /* Module */,
+				39118A6520FC43A80025838B /* Utils */,
+				39118A5E20FC43A80025838B /* Support Files */,
+			);
+			path = Schulte;
+			sourceTree = "<group>";
+		};
+		39118A5120FC43A80025838B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				39118A5220FC43A80025838B /* AppDelegate.h */,
+				39118A5420FC43A80025838B /* AppDelegate.m */,
+				39118A5320FC43A80025838B /* main.m */,
+				39118A7820FC46920025838B /* Macro.h */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		39118A5520FC43A80025838B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				39118A5620FC43A80025838B /* Test */,
+				39118A5A20FC43A80025838B /* Main */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		39118A5620FC43A80025838B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				39118A5720FC43A80025838B /* Controller */,
+				39118A5820FC43A80025838B /* Model */,
+				39118A5920FC43A80025838B /* View */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		39118A5720FC43A80025838B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39118A7920FC6DD50025838B /* LevelListController.h */,
+				39118A7A20FC6DD50025838B /* LevelListController.m */,
+				39118A8620FC8AD80025838B /* TestController.h */,
+				39118A8720FC8AD80025838B /* TestController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39118A5820FC43A80025838B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39118A7F20FC6E330025838B /* LevelModel.h */,
+				39118A8020FC6E330025838B /* LevelModel.m */,
+				39118A8C20FC8BF80025838B /* TestModel.h */,
+				39118A8D20FC8BF80025838B /* TestModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39118A5920FC43A80025838B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39118A7C20FC6E180025838B /* LevelListCell.h */,
+				39118A7D20FC6E180025838B /* LevelListCell.m */,
+				39118A8920FC8BE50025838B /* TestCell.h */,
+				39118A8A20FC8BE50025838B /* TestCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39118A5A20FC43A80025838B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				39118A5B20FC43A80025838B /* Controller */,
+				39118A5C20FC43A80025838B /* Model */,
+				39118A5D20FC43A80025838B /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		39118A5B20FC43A80025838B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39118A7420FC44CE0025838B /* MainController.h */,
+				39118A7520FC44CE0025838B /* MainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		39118A5C20FC43A80025838B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39118A5D20FC43A80025838B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39118A5E20FC43A80025838B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				39118A5F20FC43A80025838B /* Assets.xcassets */,
+				39118A6020FC43A80025838B /* LaunchScreen.storyboard */,
+				39118A6220FC43A80025838B /* Main.storyboard */,
+				39118A6420FC43A80025838B /* Info.plist */,
+				39118A7720FC45360025838B /* SchultePCH.pch */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		39118A6520FC43A80025838B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				39118A8220FC86990025838B /* Category */,
+				39118A6620FC43A80025838B /* CoreData */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		39118A6620FC43A80025838B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				39118A6720FC43A80025838B /* Core */,
+				39118A6A20FC43A80025838B /* Module */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		39118A6720FC43A80025838B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				39118A6820FC43A80025838B /* Schulte.xcdatamodeld */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		39118A6A20FC43A80025838B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				39118A6B20FC43A80025838B /* Test */,
+				39118A6C20FC43A80025838B /* User */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		39118A6B20FC43A80025838B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		39118A6C20FC43A80025838B /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		39118A8220FC86990025838B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				39118A8320FC86D10025838B /* UIImage+Color.h */,
+				39118A8420FC86D10025838B /* UIImage+Color.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		97BE61DBDC67043575692336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E38B98BC99647832CC831548 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68EA28DF177B179E7C4A3175 /* Pods-Schulte.debug.xcconfig */,
+				1514CD052DE10ED25B872BE8 /* Pods-Schulte.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39118A1720FC3E960025838B /* Schulte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39118A4720FC3E980025838B /* Build configuration list for PBXNativeTarget "Schulte" */;
+			buildPhases = (
+				A9E1519D6283B114D128CE8D /* [CP] Check Pods Manifest.lock */,
+				39118A1420FC3E960025838B /* Sources */,
+				39118A1520FC3E960025838B /* Frameworks */,
+				39118A1620FC3E960025838B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Schulte;
+			productName = Schulte;
+			productReference = 39118A1820FC3E960025838B /* Schulte.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39118A3220FC3E980025838B /* SchulteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39118A4A20FC3E980025838B /* Build configuration list for PBXNativeTarget "SchulteTests" */;
+			buildPhases = (
+				39118A2F20FC3E980025838B /* Sources */,
+				39118A3020FC3E980025838B /* Frameworks */,
+				39118A3120FC3E980025838B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39118A3520FC3E980025838B /* PBXTargetDependency */,
+			);
+			name = SchulteTests;
+			productName = SchulteTests;
+			productReference = 39118A3320FC3E980025838B /* SchulteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39118A3D20FC3E980025838B /* SchulteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39118A4D20FC3E980025838B /* Build configuration list for PBXNativeTarget "SchulteUITests" */;
+			buildPhases = (
+				39118A3A20FC3E980025838B /* Sources */,
+				39118A3B20FC3E980025838B /* Frameworks */,
+				39118A3C20FC3E980025838B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39118A4020FC3E980025838B /* PBXTargetDependency */,
+			);
+			name = SchulteUITests;
+			productName = SchulteUITests;
+			productReference = 39118A3E20FC3E980025838B /* SchulteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39118A1020FC3E960025838B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = YangJing;
+				TargetAttributes = {
+					39118A1720FC3E960025838B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					39118A3220FC3E980025838B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 39118A1720FC3E960025838B;
+					};
+					39118A3D20FC3E980025838B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 39118A1720FC3E960025838B;
+					};
+				};
+			};
+			buildConfigurationList = 39118A1320FC3E960025838B /* Build configuration list for PBXProject "Schulte" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39118A0F20FC3E960025838B;
+			productRefGroup = 39118A1920FC3E960025838B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39118A1720FC3E960025838B /* Schulte */,
+				39118A3220FC3E980025838B /* SchulteTests */,
+				39118A3D20FC3E980025838B /* SchulteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39118A1620FC3E960025838B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39118A7220FC43A80025838B /* Info.plist in Resources */,
+				39118A7120FC43A80025838B /* Main.storyboard in Resources */,
+				39118A6F20FC43A80025838B /* Assets.xcassets in Resources */,
+				39118A7020FC43A80025838B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39118A3120FC3E980025838B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39118A3C20FC3E980025838B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9E1519D6283B114D128CE8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schulte-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39118A1420FC3E960025838B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39118A7B20FC6DD50025838B /* LevelListController.m in Sources */,
+				39118A7620FC44CE0025838B /* MainController.m in Sources */,
+				39118A8E20FC8BF80025838B /* TestModel.m in Sources */,
+				39118A6E20FC43A80025838B /* AppDelegate.m in Sources */,
+				39118A8120FC6E330025838B /* LevelModel.m in Sources */,
+				39118A6D20FC43A80025838B /* main.m in Sources */,
+				39118A8520FC86D10025838B /* UIImage+Color.m in Sources */,
+				39118A7E20FC6E180025838B /* LevelListCell.m in Sources */,
+				39118A8B20FC8BE50025838B /* TestCell.m in Sources */,
+				39118A8820FC8AD80025838B /* TestController.m in Sources */,
+				39118A7320FC43A80025838B /* Schulte.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39118A2F20FC3E980025838B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39118A3820FC3E980025838B /* SchulteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39118A3A20FC3E980025838B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39118A4320FC3E980025838B /* SchulteUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39118A3520FC3E980025838B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39118A1720FC3E960025838B /* Schulte */;
+			targetProxy = 39118A3420FC3E980025838B /* PBXContainerItemProxy */;
+		};
+		39118A4020FC3E980025838B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39118A1720FC3E960025838B /* Schulte */;
+			targetProxy = 39118A3F20FC3E980025838B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39118A6020FC43A80025838B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39118A6120FC43A80025838B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		39118A6220FC43A80025838B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39118A6320FC43A80025838B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39118A4520FC3E980025838B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		39118A4620FC3E980025838B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39118A4820FC3E980025838B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EA28DF177B179E7C4A3175 /* Pods-Schulte.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
+				GCC_PREFIX_HEADER = "/Users/wordoor/Desktop/YangJing/OC/Schulte/Schulte/Support Files/SchultePCH.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Schulte/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yangjing.Schulte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39118A4920FC3E980025838B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1514CD052DE10ED25B872BE8 /* Pods-Schulte.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
+				GCC_PREFIX_HEADER = "/Users/wordoor/Desktop/YangJing/OC/Schulte/Schulte/Support Files/SchultePCH.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Schulte/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yangjing.Schulte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39118A4B20FC3E980025838B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
+				INFOPLIST_FILE = SchulteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yangjing.SchulteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schulte.app/Schulte";
+			};
+			name = Debug;
+		};
+		39118A4C20FC3E980025838B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
+				INFOPLIST_FILE = SchulteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yangjing.SchulteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schulte.app/Schulte";
+			};
+			name = Release;
+		};
+		39118A4E20FC3E980025838B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
+				INFOPLIST_FILE = SchulteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yangjing.SchulteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Schulte;
+			};
+			name = Debug;
+		};
+		39118A4F20FC3E980025838B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7S6VUPM23;
+				INFOPLIST_FILE = SchulteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yangjing.SchulteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Schulte;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39118A1320FC3E960025838B /* Build configuration list for PBXProject "Schulte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39118A4520FC3E980025838B /* Debug */,
+				39118A4620FC3E980025838B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39118A4720FC3E980025838B /* Build configuration list for PBXNativeTarget "Schulte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39118A4820FC3E980025838B /* Debug */,
+				39118A4920FC3E980025838B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39118A4A20FC3E980025838B /* Build configuration list for PBXNativeTarget "SchulteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39118A4B20FC3E980025838B /* Debug */,
+				39118A4C20FC3E980025838B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39118A4D20FC3E980025838B /* Build configuration list for PBXNativeTarget "SchulteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39118A4E20FC3E980025838B /* Debug */,
+				39118A4F20FC3E980025838B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		39118A6820FC43A80025838B /* Schulte.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39118A6920FC43A80025838B /* Schulte.xcdatamodel */,
+			);
+			currentVersion = 39118A6920FC43A80025838B /* Schulte.xcdatamodel */;
+			path = Schulte.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39118A1020FC3E960025838B /* Project object */;
+}
