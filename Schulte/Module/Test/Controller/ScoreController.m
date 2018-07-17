@@ -22,7 +22,7 @@
     
     [self addSubview];
     
-    if (self.model.bestScore > self.score) {
+    if (self.model.bestScore > self.score || self.model.bestScore == 0) {
         [ScoreEntity insertScoreWithLevel:self.model.level score:self.score userId:@"" complete:^(BOOL contextDidSave, NSError * _Nonnull error) {
         }];
     }
