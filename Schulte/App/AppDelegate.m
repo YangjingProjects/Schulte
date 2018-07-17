@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainController.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +24,9 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MainController new]];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 
+    //MagicalRecord
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Schulte0_0_1.sqlite"];
+    
     return YES;
 }
 

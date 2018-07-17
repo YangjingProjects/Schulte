@@ -27,6 +27,8 @@
 		39DDF92420FD96B500BA943E /* ScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92320FD96B500BA943E /* ScoreController.m */; };
 		39DDF92A20FDC86C00BA943E /* RuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92920FDC86C00BA943E /* RuleController.m */; };
 		39DDF92D20FDC9EB00BA943E /* CustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92C20FDC9EB00BA943E /* CustomTransition.m */; };
+		39DDF93320FDF85F00BA943E /* ScoreEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF93120FDF85F00BA943E /* ScoreEntity+CoreDataClass.m */; };
+		39DDF93420FDF85F00BA943E /* ScoreEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF93220FDF85F00BA943E /* ScoreEntity+CoreDataProperties.m */; };
 		CC7CB7D8A2A15F18E81D5C2E /* libPods-Schulte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,10 @@
 		39DDF92920FDC86C00BA943E /* RuleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleController.m; sourceTree = "<group>"; };
 		39DDF92B20FDC9EB00BA943E /* CustomTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransition.h; sourceTree = "<group>"; };
 		39DDF92C20FDC9EB00BA943E /* CustomTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransition.m; sourceTree = "<group>"; };
+		39DDF92F20FDF85F00BA943E /* ScoreEntity+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScoreEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		39DDF93020FDF85F00BA943E /* ScoreEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScoreEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		39DDF93120FDF85F00BA943E /* ScoreEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ScoreEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		39DDF93220FDF85F00BA943E /* ScoreEntity+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ScoreEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
 		68EA28DF177B179E7C4A3175 /* Pods-Schulte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schulte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Schulte/Pods-Schulte.debug.xcconfig"; sourceTree = "<group>"; };
 		8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Schulte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -312,17 +318,10 @@
 		39118A6A20FC43A80025838B /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				39118A6B20FC43A80025838B /* Test */,
+				39DDF92E20FDF84F00BA943E /* Score */,
 				39118A6C20FC43A80025838B /* User */,
 			);
 			path = Module;
-			sourceTree = "<group>";
-		};
-		39118A6B20FC43A80025838B /* Test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 		39118A6C20FC43A80025838B /* User */ = {
@@ -339,6 +338,17 @@
 				39118A8420FC86D10025838B /* UIImage+Color.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		39DDF92E20FDF84F00BA943E /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				39DDF92F20FDF85F00BA943E /* ScoreEntity+CoreDataProperties.h */,
+				39DDF93220FDF85F00BA943E /* ScoreEntity+CoreDataProperties.m */,
+				39DDF93020FDF85F00BA943E /* ScoreEntity+CoreDataClass.h */,
+				39DDF93120FDF85F00BA943E /* ScoreEntity+CoreDataClass.m */,
+			);
+			path = Score;
 			sourceTree = "<group>";
 		};
 		97BE61DBDC67043575692336 /* Frameworks */ = {
@@ -511,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DDF93320FDF85F00BA943E /* ScoreEntity+CoreDataClass.m in Sources */,
 				39DDF92420FD96B500BA943E /* ScoreController.m in Sources */,
 				39118A7B20FC6DD50025838B /* LevelListController.m in Sources */,
 				39118A7620FC44CE0025838B /* MainController.m in Sources */,
@@ -524,6 +535,7 @@
 				39118A8B20FC8BE50025838B /* TestCell.m in Sources */,
 				39118A8820FC8AD80025838B /* TestController.m in Sources */,
 				39DDF92A20FDC86C00BA943E /* RuleController.m in Sources */,
+				39DDF93420FDF85F00BA943E /* ScoreEntity+CoreDataProperties.m in Sources */,
 				39118A7320FC43A80025838B /* Schulte.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
