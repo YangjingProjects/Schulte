@@ -148,7 +148,6 @@
         if (currentNumber == self.model.levelSize.height*self.model.levelSize.width) {
             
             [self timerStop];
-            
             ScoreController *subVC = [[ScoreController alloc] init];
             subVC.model = self.model;
             subVC.score = self.stopTime - self.startTime;

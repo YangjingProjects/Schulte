@@ -39,7 +39,13 @@
         label.font = [UIFont fontWithName:@"Georgia-Bold" size:15];
         label.textAlignment = NSTextAlignmentLeft;
         label.backgroundColor = [UIColor clearColor];
-        label.text = [NSString stringWithFormat:@"记录: %.2f", model.bestScore];
+        if (model.bestScore == 0) {
+            label.text = @"最佳记录：__:__ s";
+            
+        } else {
+            label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", model.bestScore];
+            
+        }
         label;
     });
     [self.contentView addSubview:scoreLabel];

@@ -8,7 +8,7 @@
 
 #import "LevelListController.h"
 #import "TestController.h"
-
+#import "ScoreEntity+CoreDataClass.h"
 #import "LevelListCell.h"
 
 @interface LevelListController () <UICollectionViewDelegate, UICollectionViewDataSource>
@@ -38,12 +38,14 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:17]};
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navbar_back"] style:UIBarButtonItemStyleDone target:self action:@selector(popAction:)];
+    
+    [self.collectionView reloadData];
 }
 
 //MARK: - data
 - (void)getData {
     self.dataArray = [[NSMutableArray alloc] init];
-    for (NSInteger i = 2; i < 10; i++) {
+    for (NSInteger i = 3; i < 10; i++) {
         LevelModel *model = [[LevelModel alloc] init];
         model.level = i;
         [self.dataArray addObject:model];

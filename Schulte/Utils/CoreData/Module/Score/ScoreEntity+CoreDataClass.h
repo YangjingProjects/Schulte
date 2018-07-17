@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ScoreEntity : NSManagedObject
 
+typedef  void (^CompleteBlock)(BOOL contextDidSave, NSError *error);
+
++ (void)insertScoreWithLevel:(NSInteger)level score:(double)score userId:(NSString *)userId complete:(CompleteBlock)complete;
+
++ (ScoreEntity *)selecteScoreWithLevel:(NSInteger)level userId:(NSString *)userId;
+
 @end
 
 NS_ASSUME_NONNULL_END

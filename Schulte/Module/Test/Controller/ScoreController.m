@@ -8,6 +8,7 @@
 
 #import "ScoreController.h"
 #import "TestController.h"
+#import "ScoreEntity+CoreDataClass.h"
 
 @interface ScoreController ()
 
@@ -20,6 +21,9 @@
     // Do any additional setup after loading the view.
     
     [self addSubview];
+    
+    [ScoreEntity insertScoreWithLevel:self.model.level score:self.score userId:@"" complete:^(BOOL contextDidSave, NSError * _Nonnull error) {
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -112,7 +116,13 @@
         label.font = [UIFont fontWithName:@"Georgia-Bold" size:15];
         label.textAlignment = NSTextAlignmentCenter;
         label.backgroundColor = [UIColor clearColor];
-        label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", self.model.bestScore];
+        if (self.model.bestScore == 0) {
+            label.text = @"最佳记录：__:__ s";
+
+        } else {
+            label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", self.model.bestScore];
+
+        }
         label;
     });
     [self.view addSubview:historyLabel];
@@ -140,7 +150,7 @@
         
         UIButton *nextBtn = ({
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-            [btn setTitle:@"继续挑战" forState:UIControlStateNormal];
+            [btn setTitle:@"下一关" forState:UIControlStateNormal];
             btn.backgroundColor = kRGB(95, 174, 250);
             btn.layer.cornerRadius = 8;
             btn.titleLabel.font = [UIFont fontWithName:@"Georgia-Bold" size:17];

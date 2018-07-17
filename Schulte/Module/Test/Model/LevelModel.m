@@ -7,12 +7,15 @@
 //
 
 #import "LevelModel.h"
+#import "ScoreEntity+CoreDataClass.h"
 
-@implementation LevelModel
+@implementation LevelModel {
+    double _score;
+}
 
 - (UIColor *)levelColor {
-    if (self.level <= 4) return kRGBA(36, 139, 68, 1);
-    if (self.level > 4 && self.level <= 7) return kRGBA(244, 110, 48, 1);
+    if (self.level <= 5) return kRGBA(36, 139, 68, 1);
+    if (self.level > 5 && self.level <= 7) return kRGBA(244, 110, 48, 1);
     return kRGBA(231, 11, 40, 1);
 }
 
@@ -21,7 +24,11 @@
 }
 
 - (double)bestScore {
-    return 0;
+    ScoreEntity *entity = [ScoreEntity selecteScoreWithLevel:self.level userId:@""];
+    if (entity) {
+        _score = entity.score;
+    }
+    return _score;
 }
 
 @end
