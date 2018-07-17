@@ -15,9 +15,8 @@
 + (void)insertScoreWithLevel:(NSInteger)level score:(double)score userId:(NSString *)userId complete:(CompleteBlock)complete {
     
     [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
-        
         NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"level = '%ld' and user_id = 'test'", (long)level]];
-        ScoreEntity *entity = [ScoreEntity MR_findFirstWithPredicate:predicate inContext:localContext];
+        ScoreEntity *entity = [ScoreEntity MR_findFirstWithPredicate:predicate sortedBy:@"score" ascending:YES inContext:localContext];
         if (!entity) entity = [ScoreEntity MR_createEntityInContext:localContext];
         entity.user_id = @"test";
         entity.level = level;
@@ -31,7 +30,7 @@
 
 + (ScoreEntity *)selecteScoreWithLevel:(NSInteger)level userId:(NSString *)userId {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:[NSString stringWithFormat:@"level = '%ld' and user_id = 'test'", (long)level]];
-    ScoreEntity *entity = [ScoreEntity MR_findFirstWithPredicate:predicate];
+    ScoreEntity *entity = [ScoreEntity MR_findFirstWithPredicate:predicate sortedBy:@"score" ascending:YES];
     return entity;
 }
 
