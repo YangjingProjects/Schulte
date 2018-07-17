@@ -7,6 +7,7 @@
 //
 
 #import "TestController.h"
+#import "ScoreController.h"
 #import "TestCell.h"
 
 @interface TestController () <UICollectionViewDelegate, UICollectionViewDataSource>
@@ -31,17 +32,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self getData];
-    [self addSubview];
+    self.navigationController.navigationBar.barTintColor = kRGBA(28, 28, 28, 1);
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont fontWithName:@"Georgia-Bold" size:22]};
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navbar_back"] style:UIBarButtonItemStyleDone target:self action:@selector(closeAction:)];
+    
+    self.view.backgroundColor = kRGB(28, 28, 28);
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.navigationController.navigationBar.barTintColor = self.model.levelColor;
-    
     [self addObserver:self forKeyPath:@"currentNumber" options:NSKeyValueObservingOptionNew context:nil];
     
+    self.navigationItem.title = [NSString stringWithFormat:@"%ld x %ld", (long)self.model.level, (long)self.model.level];
+
+    [self getData];
+    [self addSubview];
+
     [self timerAnimation];
 }
 
@@ -72,6 +81,10 @@
 }
 
 //MARK: - private methods
+- (void)closeAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)timerAnimation {
     self.collectionView.hidden = YES;
     
@@ -136,7 +149,10 @@
             
             [self timerStop];
             
-            NSLog(@"success %.2f", self.stopTime - self.startTime);
+            ScoreController *subVC = [[ScoreController alloc] init];
+            subVC.model = self.model;
+            subVC.score = self.stopTime - self.startTime;
+            [self.navigationController pushViewController:subVC animated:NO];
         }
     }
 }
@@ -166,16 +182,16 @@
 }
 
 - (void)addSubview {
-    self.navigationItem.title = [NSString stringWithFormat:@"%ld x %ld", (long)self.model.level, (long)self.model.level];
-    
-    self.view.backgroundColor = kRGBA(28, 28, 28, 1);
+    [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    self.layout = nil;
+    self.collectionView = nil;
+    self.currentNumber = 0;
     
     UILabel *topView = ({
         UILabel *label = [[UILabel alloc] init];
         label.textColor = UIColorFromRGB(0xffffff);
         label.font = [UIFont systemFontOfSize:15];
         label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor clearColor];
         label.text = @"请按数字顺序依次点击";
         label;
     });
@@ -184,17 +200,6 @@
     
     [self.view addSubview:self.collectionView];
     
-    UILabel *bottomView = ({
-        UILabel *label = [[UILabel alloc] init];
-        label.textColor = UIColorFromRGB(0xffffff);
-        label.font = [UIFont systemFontOfSize:15];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor clearColor];
-        label.text = @"请按数字顺序依次点击";
-        label;
-    });
-    [self.view addSubview:bottomView];
-    bottomView.frame = CGRectMake(0, kScreenHeight-64, kScreenWidth, 64);
 }
 
 //MARK: - getter

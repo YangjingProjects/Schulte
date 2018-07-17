@@ -10,7 +10,7 @@
 #define Macro_h
 
 //MARK: - iOS11 - iphoneX
-#define wd_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //MARK: - screen
 #define kScreenWidth            [UIScreen mainScreen].bounds.size.width

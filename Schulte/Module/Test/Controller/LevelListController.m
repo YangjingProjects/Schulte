@@ -35,6 +35,9 @@
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.barTintColor = kRGBA(28, 28, 28, 1);
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont systemFontOfSize:17]};
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navbar_back"] style:UIBarButtonItemStyleDone target:self action:@selector(popAction:)];
 }
 
 //MARK: - data
@@ -45,6 +48,11 @@
         model.level = i;
         [self.dataArray addObject:model];
     }
+}
+
+//MARK: - private methods
+- (void)popAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 //MARK: - collectionview datasource
@@ -65,7 +73,7 @@
     
     TestController *subVC = [[TestController alloc] init];
     subVC.model = model;
-    [self.navigationController pushViewController:subVC animated:YES];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:subVC] animated:YES completion:nil];
 }
 
 - (void)addSubview {

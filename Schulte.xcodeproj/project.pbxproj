@@ -24,6 +24,9 @@
 		39118A8820FC8AD80025838B /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8720FC8AD80025838B /* TestController.m */; };
 		39118A8B20FC8BE50025838B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8A20FC8BE50025838B /* TestCell.m */; };
 		39118A8E20FC8BF80025838B /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8D20FC8BF80025838B /* TestModel.m */; };
+		39DDF92420FD96B500BA943E /* ScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92320FD96B500BA943E /* ScoreController.m */; };
+		39DDF92A20FDC86C00BA943E /* RuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92920FDC86C00BA943E /* RuleController.m */; };
+		39DDF92D20FDC9EB00BA943E /* CustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92C20FDC9EB00BA943E /* CustomTransition.m */; };
 		CC7CB7D8A2A15F18E81D5C2E /* libPods-Schulte.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,12 @@
 		39118A8A20FC8BE50025838B /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		39118A8C20FC8BF80025838B /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		39118A8D20FC8BF80025838B /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		39DDF92220FD96B500BA943E /* ScoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreController.h; sourceTree = "<group>"; };
+		39DDF92320FD96B500BA943E /* ScoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreController.m; sourceTree = "<group>"; };
+		39DDF92820FDC86C00BA943E /* RuleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleController.h; sourceTree = "<group>"; };
+		39DDF92920FDC86C00BA943E /* RuleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuleController.m; sourceTree = "<group>"; };
+		39DDF92B20FDC9EB00BA943E /* CustomTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTransition.h; sourceTree = "<group>"; };
+		39DDF92C20FDC9EB00BA943E /* CustomTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTransition.m; sourceTree = "<group>"; };
 		68EA28DF177B179E7C4A3175 /* Pods-Schulte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schulte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Schulte/Pods-Schulte.debug.xcconfig"; sourceTree = "<group>"; };
 		8D9CC3C3FCF3C036089DC9AD /* libPods-Schulte.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Schulte.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +206,8 @@
 				39118A7A20FC6DD50025838B /* LevelListController.m */,
 				39118A8620FC8AD80025838B /* TestController.h */,
 				39118A8720FC8AD80025838B /* TestController.m */,
+				39DDF92220FD96B500BA943E /* ScoreController.h */,
+				39DDF92320FD96B500BA943E /* ScoreController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,6 +249,8 @@
 			children = (
 				39118A7420FC44CE0025838B /* MainController.h */,
 				39118A7520FC44CE0025838B /* MainController.m */,
+				39DDF92820FDC86C00BA943E /* RuleController.h */,
+				39DDF92920FDC86C00BA943E /* RuleController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +258,8 @@
 		39118A5C20FC43A80025838B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				39DDF92B20FDC9EB00BA943E /* CustomTransition.h */,
+				39DDF92C20FDC9EB00BA943E /* CustomTransition.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -496,16 +511,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39DDF92420FD96B500BA943E /* ScoreController.m in Sources */,
 				39118A7B20FC6DD50025838B /* LevelListController.m in Sources */,
 				39118A7620FC44CE0025838B /* MainController.m in Sources */,
 				39118A8E20FC8BF80025838B /* TestModel.m in Sources */,
 				39118A6E20FC43A80025838B /* AppDelegate.m in Sources */,
 				39118A8120FC6E330025838B /* LevelModel.m in Sources */,
 				39118A6D20FC43A80025838B /* main.m in Sources */,
+				39DDF92D20FDC9EB00BA943E /* CustomTransition.m in Sources */,
 				39118A8520FC86D10025838B /* UIImage+Color.m in Sources */,
 				39118A7E20FC6E180025838B /* LevelListCell.m in Sources */,
 				39118A8B20FC8BE50025838B /* TestCell.m in Sources */,
 				39118A8820FC8AD80025838B /* TestController.m in Sources */,
+				39DDF92A20FDC86C00BA943E /* RuleController.m in Sources */,
 				39118A7320FC43A80025838B /* Schulte.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

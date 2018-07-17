@@ -21,7 +21,8 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MainController new]];
-    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+
     return YES;
 }
 
