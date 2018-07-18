@@ -22,7 +22,6 @@
     
     self.view.backgroundColor = kRGBA(28, 28, 28, 1);
     
-    [self addSubview];
     [self animationAction];
 }
 
@@ -65,7 +64,7 @@
 
     UILabel *coverLabel = ({
         UILabel *label = [[UILabel alloc] init];
-        label.textColor = UIColorFromRGB(0xffffff);
+        label.textColor = kRGB(253, 105, 87);
         label.font = [UIFont fontWithName:@"Georgia-Bold" size:25];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = @"Schulte";
@@ -81,7 +80,7 @@
     
     UIView *lineView1 = ({
         UIView *view = [[UIView alloc] init];
-        view.backgroundColor = [UIColor whiteColor];
+        view.backgroundColor = kRGB(253, 105, 87);
         view;
     });
     [coverView addSubview:lineView1];
@@ -97,7 +96,7 @@
     
     UIView *lineView3 = ({
         UIView *view = [[UIView alloc] init];
-        view.backgroundColor = [UIColor whiteColor];
+        view.backgroundColor = kRGB(95, 174, 250);
         view;
     });
     [coverView addSubview:lineView3];
@@ -105,7 +104,7 @@
     
     UIView *lineView4 = ({
         UIView *view = [[UIView alloc] init];
-        view.backgroundColor = [UIColor whiteColor];
+        view.backgroundColor = kRGBA(36, 139, 68, 1);
         view;
     });
     [coverView addSubview:lineView4];
@@ -123,7 +122,8 @@
             
         } completion:^(BOOL finished) {
             [coverView removeFromSuperview];
-            
+            [self addSubview];
+
         }];
     }];
 }
@@ -154,12 +154,18 @@
         btn;
     });
     [self.view addSubview:startBtn];
-    [startBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerX.equalTo(self.view.mas_centerX);
-        make.centerY.equalTo(self.view.mas_centerY);
-        make.size.mas_equalTo(CGSizeMake(kScreenWidth/2, 50));
-    }];
     [startBtn addTarget:self action:@selector(levelListAction:) forControlEvents:UIControlEventTouchUpInside];
+
+    startBtn.frame = CGRectMake(kScreenWidth/4*3-50+kScreenWidth/2/2, (kScreenHeight-50)/2-kScreenWidth/2/2, kScreenWidth/2, 50);
+    startBtn.transform = CGAffineTransformMakeRotation(M_PI*1/2);
+    
+    [UIView animateWithDuration:2 delay:0 usingSpringWithDamping:0.4 initialSpringVelocity:0.6 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        startBtn.transform = CGAffineTransformIdentity;
+        startBtn.frame = CGRectMake(kScreenWidth/4, (kScreenHeight-50)/2, kScreenWidth/2, 50);
+
+    } completion:^(BOOL finished) {
+
+    }];
 }
 
 @end
