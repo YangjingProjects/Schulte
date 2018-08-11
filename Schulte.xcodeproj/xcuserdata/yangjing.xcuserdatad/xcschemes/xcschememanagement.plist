@@ -7,7 +7,25 @@
 		<key>Schulte.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>39118A1720FC3E960025838B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39118A3220FC3E980025838B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39118A3D20FC3E980025838B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
