@@ -119,11 +119,16 @@
         label.textAlignment = NSTextAlignmentCenter;
         label.backgroundColor = [UIColor clearColor];
         if (self.model.bestScore == 0) {
-            label.text = @"最佳记录：__:__ s";
+            label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", self.score];
 
         } else {
-            label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", self.model.bestScore];
+            if (self.score < self.model.bestScore) {
+                label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", self.score];
 
+            } else {
+                label.text = [NSString stringWithFormat:@"最佳记录：%.2f s", self.model.bestScore];
+
+            }
         }
         label;
     });
