@@ -195,7 +195,7 @@
         label;
     });
     [self.view addSubview:topView];
-    topView.frame = CGRectMake(0, 64, kScreenWidth, 64);
+    topView.frame = CGRectMake(0, 64+(kiPhoneX ? 22 : 0), kScreenWidth, 64);
     
     [self.view addSubview:self.collectionView];
     

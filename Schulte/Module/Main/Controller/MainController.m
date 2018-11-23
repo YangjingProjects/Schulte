@@ -9,6 +9,7 @@
 #import "MainController.h"
 #import "LevelListController.h"
 #import "RuleController.h"
+#import "WebController.h"
 
 @interface MainController ()
 
@@ -51,6 +52,11 @@
 
 - (void)ruleAction:(id)sender {
     [self presentViewController:[[RuleController alloc] init] animated:YES completion:nil];
+}
+
+- (void)privateAction:(id)sender {
+    WebController *subVC = [[WebController alloc] initWithUrl:@"https://www.freeprivacypolicy.com/privacy/view/6e37c197ed158b6ba45d134f0bf4631e" title:@"舒尔特作战隐私政策"];
+    [self.navigationController pushViewController:subVC animated:YES];
 }
 
 - (void)animationAction {
@@ -166,6 +172,17 @@
     } completion:^(BOOL finished) {
 
     }];
+    
+    UIButton *privateBtn = ({
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitle:@"隐私政策" forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(privateAction:) forControlEvents:UIControlEventTouchUpInside];
+        btn.titleLabel.font = [UIFont fontWithName:@"Georgia" size:13];
+        btn;
+    });
+    [self.view addSubview:privateBtn];
+    privateBtn.frame = CGRectMake(kScreenWidth/4, (kScreenHeight-50)/2+50, kScreenWidth/2, 50);
 }
 
 @end

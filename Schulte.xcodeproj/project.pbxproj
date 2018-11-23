@@ -14,7 +14,6 @@
 		39118A6F20FC43A80025838B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39118A5F20FC43A80025838B /* Assets.xcassets */; };
 		39118A7020FC43A80025838B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39118A6020FC43A80025838B /* LaunchScreen.storyboard */; };
 		39118A7120FC43A80025838B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39118A6220FC43A80025838B /* Main.storyboard */; };
-		39118A7220FC43A80025838B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39118A6420FC43A80025838B /* Info.plist */; };
 		39118A7320FC43A80025838B /* Schulte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39118A6820FC43A80025838B /* Schulte.xcdatamodeld */; };
 		39118A7620FC44CE0025838B /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A7520FC44CE0025838B /* MainController.m */; };
 		39118A7B20FC6DD50025838B /* LevelListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A7A20FC6DD50025838B /* LevelListController.m */; };
@@ -24,6 +23,7 @@
 		39118A8820FC8AD80025838B /* TestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8720FC8AD80025838B /* TestController.m */; };
 		39118A8B20FC8BE50025838B /* TestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8A20FC8BE50025838B /* TestCell.m */; };
 		39118A8E20FC8BF80025838B /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39118A8D20FC8BF80025838B /* TestModel.m */; };
+		391AF59A21A7C7B4003F69B1 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 391AF59921A7C7B4003F69B1 /* WebController.m */; };
 		39DDF92420FD96B500BA943E /* ScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92320FD96B500BA943E /* ScoreController.m */; };
 		39DDF92A20FDC86C00BA943E /* RuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92920FDC86C00BA943E /* RuleController.m */; };
 		39DDF92D20FDC9EB00BA943E /* CustomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DDF92C20FDC9EB00BA943E /* CustomTransition.m */; };
@@ -84,6 +84,8 @@
 		39118A8A20FC8BE50025838B /* TestCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCell.m; sourceTree = "<group>"; };
 		39118A8C20FC8BF80025838B /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		39118A8D20FC8BF80025838B /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		391AF59821A7C7B4003F69B1 /* WebController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
+		391AF59921A7C7B4003F69B1 /* WebController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
 		39DDF92220FD96B500BA943E /* ScoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreController.h; sourceTree = "<group>"; };
 		39DDF92320FD96B500BA943E /* ScoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreController.m; sourceTree = "<group>"; };
 		39DDF92820FDC86C00BA943E /* RuleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuleController.h; sourceTree = "<group>"; };
@@ -257,6 +259,8 @@
 				39118A7520FC44CE0025838B /* MainController.m */,
 				39DDF92820FDC86C00BA943E /* RuleController.h */,
 				39DDF92920FDC86C00BA943E /* RuleController.m */,
+				391AF59821A7C7B4003F69B1 /* WebController.h */,
+				391AF59921A7C7B4003F69B1 /* WebController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -472,7 +476,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39118A7220FC43A80025838B /* Info.plist in Resources */,
 				39118A7120FC43A80025838B /* Main.storyboard in Resources */,
 				39118A6F20FC43A80025838B /* Assets.xcassets in Resources */,
 				39118A7020FC43A80025838B /* LaunchScreen.storyboard in Resources */,
@@ -532,6 +535,7 @@
 				39DDF92D20FDC9EB00BA943E /* CustomTransition.m in Sources */,
 				39118A8520FC86D10025838B /* UIImage+Color.m in Sources */,
 				39118A7E20FC6E180025838B /* LevelListCell.m in Sources */,
+				391AF59A21A7C7B4003F69B1 /* WebController.m in Sources */,
 				39118A8B20FC8BE50025838B /* TestCell.m in Sources */,
 				39118A8820FC8AD80025838B /* TestController.m in Sources */,
 				39DDF92A20FDC86C00BA943E /* RuleController.m in Sources */,
