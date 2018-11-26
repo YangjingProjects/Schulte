@@ -22,6 +22,8 @@
     
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[MainController new]];
+    [self.window makeKeyAndVisible];
+
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 
     //MagicalRecord
